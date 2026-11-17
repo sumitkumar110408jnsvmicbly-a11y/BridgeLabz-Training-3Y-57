@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Live Character Counter</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:Arial,sans-serif;max-width:520px;margin:30px auto;padding:0 15px}
+input,textarea,button{font-size:14px;padding:8px;margin-top:6px}
+input,textarea{width:100%;border:2px solid #aaa;border-radius:4px}
+button{cursor:pointer;border:1px solid #888;border-radius:4px;background:#f2f2f2}
+button:hover{background:#e4e4e4}
+.error{color:red;font-size:13px;min-height:16px;display:block}
+.success{background:#e6f7e6;color:green;padding:10px;border-radius:4px;margin-top:12px}
+</style>
+<style>
+textarea{height:140px;resize:none}
+#counter{margin-top:8px;font-weight:bold;padding:6px 10px;border-radius:4px;display:inline-block;background:#e6f7e6;color:#1b7a1b}
+#counter.warning{background:#fff3b0;color:#8a6d00}
+#counter.danger{background:#ffd6d6;color:#c00000}
+</style>
+</head>
+<body>
+<h2>Live Character Counter</h2>
+<textarea id="messageBox" placeholder="Type here (max 100 characters)"></textarea>
+<div id="counter">100 characters left</div>
+<br>
+<button id="resetButton">Reset</button>
+<script src="q2_char_counter.js"></script>
+</body>
+</html>

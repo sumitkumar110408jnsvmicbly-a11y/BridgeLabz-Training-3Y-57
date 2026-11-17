@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Table Filter</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:Arial,sans-serif;max-width:520px;margin:30px auto;padding:0 15px}
+input,textarea,button{font-size:14px;padding:8px;margin-top:6px}
+input,textarea{width:100%;border:2px solid #aaa;border-radius:4px}
+button{cursor:pointer;border:1px solid #888;border-radius:4px;background:#f2f2f2}
+button:hover{background:#e4e4e4}
+.error{color:red;font-size:13px;min-height:16px;display:block}
+.success{background:#e6f7e6;color:green;padding:10px;border-radius:4px;margin-top:12px}
+</style>
+<style>
+table{width:100%;border-collapse:collapse;margin-top:12px}
+th,td{border:1px solid #ccc;padding:8px;text-align:left}
+th{background:#f0f0f0}
+#noResults{text-align:center;color:#c00;padding:12px}
+</style>
+</head>
+<body>
+<h2>Student Table</h2>
+<input type="text" id="searchBox" placeholder="Search by name, branch or CGPA">
+<table>
+  <thead>
+    <tr><th>Name</th><th>Branch</th><th>CGPA</th></tr>
+  </thead>
+  <tbody id="studentRows">
+    <tr><td>Amit Sharma</td><td>CSE</td><td>8.7</td></tr>
+    <tr><td>Sara Khan</td><td>ECE</td><td>9.1</td></tr>
+    <tr><td>Kiran Patel</td><td>Mechanical</td><td>7.8</td></tr>
+    <tr><td>Neha Verma</td><td>CSE</td><td>8.9</td></tr>
+    <tr><td>Ravi Singh</td><td>Civil</td><td>7.2</td></tr>
+    <tr><td>Sumit Kumar</td><td>CSE (Cybersecurity)</td><td>8.5</td></tr>
+  </tbody>
+</table>
+<p id="noResults" hidden>No results found</p>
+<script src="q6_table_filter.js"></script>
+</body>
+</html>

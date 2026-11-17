@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Custom Dropdown</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:Arial,sans-serif;max-width:520px;margin:30px auto;padding:0 15px}
+input,textarea,button{font-size:14px;padding:8px;margin-top:6px}
+input,textarea{width:100%;border:2px solid #aaa;border-radius:4px}
+button{cursor:pointer;border:1px solid #888;border-radius:4px;background:#f2f2f2}
+button:hover{background:#e4e4e4}
+.error{color:red;font-size:13px;min-height:16px;display:block}
+.success{background:#e6f7e6;color:green;padding:10px;border-radius:4px;margin-top:12px}
+</style>
+<style>
+#dropdown{position:relative;width:220px}
+#dropdownButton{width:100%;text-align:left;margin:0;background:#fff}
+#dropdownList{position:absolute;left:0;right:0;margin:2px 0 0;padding:0;list-style:none;background:#fff;border:1px solid #888;border-radius:4px;z-index:5}
+#dropdownList[hidden]{display:none}
+#dropdownList li{padding:8px;cursor:pointer}
+#dropdownList li:hover{background:#e8f0fe}
+</style>
+</head>
+<body>
+<h2>Custom Dropdown</h2>
+<div id="dropdown">
+  <button id="dropdownButton">Select a language ▾</button>
+  <ul id="dropdownList" hidden></ul>
+</div>
+<script src="q8_custom_dropdown.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Form Submit Blocker</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:Arial,sans-serif;max-width:520px;margin:30px auto;padding:0 15px}
+input,textarea,button{font-size:14px;padding:8px;margin-top:6px}
+input,textarea{width:100%;border:2px solid #aaa;border-radius:4px}
+button{cursor:pointer;border:1px solid #888;border-radius:4px;background:#f2f2f2}
+button:hover{background:#e4e4e4}
+.error{color:red;font-size:13px;min-height:16px;display:block}
+.success{background:#e6f7e6;color:green;padding:10px;border-radius:4px;margin-top:12px}
+</style>
+<style>
+label{display:block;margin-top:12px;font-weight:bold}
+input.invalid{border-color:red}
+input.valid{border-color:green}
+</style>
+</head>
+<body>
+<h2>Registration Form</h2>
+<form id="signupForm" novalidate>
+  <label for="nameInput">Name</label>
+  <input type="text" id="nameInput">
+  <span class="error" id="nameError"></span>
+
+  <label for="emailInput">Email</label>
+  <input type="text" id="emailInput">
+  <span class="error" id="emailError"></span>
+
+  <label for="passwordInput">Password</label>
+  <input type="password" id="passwordInput">
+  <span class="error" id="passwordError"></span>
+
+  <button type="submit">Submit</button>
+</form>
+<div id="successMessage" class="success" hidden>Form Submitted Successfully</div>
+<script src="q9_form_blocker.js"></script>
+</body>
+</html>

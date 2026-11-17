@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Product List Manager</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:Arial,sans-serif;max-width:520px;margin:30px auto;padding:0 15px}
+input,textarea,button{font-size:14px;padding:8px;margin-top:6px}
+input,textarea{width:100%;border:2px solid #aaa;border-radius:4px}
+button{cursor:pointer;border:1px solid #888;border-radius:4px;background:#f2f2f2}
+button:hover{background:#e4e4e4}
+.error{color:red;font-size:13px;min-height:16px;display:block}
+.success{background:#e6f7e6;color:green;padding:10px;border-radius:4px;margin-top:12px}
+</style>
+<style>
+#addRow{display:flex;gap:8px}
+#addRow input{flex:1}
+ul{list-style:none;padding:0}
+li{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px;border-bottom:1px solid #ddd}
+li .text{flex:1}
+li input.edit-input{margin:0;padding:5px;flex:1}
+li button{margin:0 0 0 4px;padding:5px 10px}
+</style>
+</head>
+<body>
+<h2>Product List Manager</h2>
+<div id="addRow">
+  <input type="text" id="productInput" placeholder="Enter product name">
+  <button id="addButton">Add</button>
+</div>
+<ul id="productList"></ul>
+<script src="q1_product_list.js"></script>
+</body>
+</html>
